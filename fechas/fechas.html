@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="@{fechas.css}"> -->
+    <link rel="stylesheet" href="/css/fechas.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="caja">
+        <div class="botones">
+            
+            <h2>Agrega la fecha de tu parcial de <span th:text="${}">Projgramación I</span></h2>
+            <form>
+                <label for="fecha_parcial">Fecha</label>
+                <input name="fecha_parcial" type="date" th:field="*{fecha_parcial}">
+                <input name="agendar_fecha" type="submit" placeholder="Agendar">
+            </form>
+            <img src="/img/astros4.png" alt="robots" class="astros">
+            <nav class="navigation">
+                <ul>
+                    <li><a>Atras</a></li>
+                    <li> <a href="/fechas/fechas copy.html">Siguiente</a></li>
+                    <li><a>Inicio</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</body>
+</html>
