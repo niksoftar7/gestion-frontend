@@ -14,15 +14,27 @@
                     <div class="materias_caja">
                         <label for="materias">Selecciona tus Materias:</label><br>
                         <select id="materias" name="materias[]" multiple>
-                            <option value="materias_semestre"><span th:text="${materias}">0</span></option>
-                        </select>
+                            <option value="fundamentos_programacion">Fundamentos de Programación</option>
+                            <option value="institucional">Institucional (Electiva)</option>
+                            <option value="introduccion_sistemas">Introducción a la Ingeniería en Sistemas</option>
+                            <option value="calculo_diferencial">Cálculo Diferencial</option>
+                            <option value="tecnicas_comunicacion">Técnicas de la Comunicación</option>
+                            <option value="matematicas_discretas">Matemáticas Discretas</option>
+                            <option value="programacion1">Programación I</option>
+                            <option value="teoria_sistemas">Teoría General de Sistemas</option>
+                            <option value="calculo_integral">Cálculo Integral</option>
+                            <option value="fisica_mecanica">Física Mecánica</option>
+                            <option value="algebra_lineal">Álgebra Lineal</option>
+                            <option value="mantenimiento_web">Mantenimiento de Comp. y Desarrollo Web</option>
+                            </select>
                     </div>
                 
                     <div class="horas_estudio">
                         <label for="horas_estudio">Horas de estudio disponibles al día:</label><br>
                         <input type="number" id="horas_estudio" name="horas_estudio" placeholder="Horas de estudio" min="1" max="24" th:field="*{horas_estudio}">
                     </div>
-                
+                    <img src="/img/astros5.png" alt="astro" class="astro">
+                    <img src="/img/astros6.png" alt="astro" class="astro1">
                     <br>
                     <button type="submit">Enviar</button>
                 </form>

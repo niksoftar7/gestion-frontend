@@ -35,13 +35,22 @@ body {
     right: 8%;
     left: 55%; */
     margin-left: 30%;
-    margin-top: 30%;
+    margin-top: 10%;
     width: 40%;
     height: auto;
     z-index: 10;
     text-align: center;
     background: transparent;
     gap: 50px;
+}
+
+#materias{
+    margin-top: 5%;
+    height: 250px;
+}
+
+.horas_estudio{
+    margin-top: 10%;
 }
 
 .materias_caja label,
@@ -76,8 +85,7 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    background: linear-gradient(135deg, #00b4d8, #0077b6);
-    color: #ffffff;
+    background: linear-gradient(90deg, #16367E, #723D8F);    color: #ffffff;
     font-size: 1.2rem;
     font-weight: bold;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -86,6 +94,18 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    background: linear-gradient(135deg, #0077b6, #723D8F);
     transform: scale(1.1);
+}
+
+.astro{
+    position: absolute;
+    top:15%;
+    right: 100%;
+}
+
+.astro1{
+    position: absolute;
+    top:15%;
+    right: -60%;
 }

@@ -96,6 +96,10 @@ button:active{
     /* top: 50%; */
 }
 
+form{
+    z-index: 100;
+}
+
 .s1{
     margin-right: 4%;
 }

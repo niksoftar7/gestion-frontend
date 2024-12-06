@@ -8,7 +8,7 @@ body {
     background-color: #003459;
     background-image: url(	https://img.freepik.com/fotos-premium/abstracto-tecnologia-particulas-onduladas-diseno-fondo-onda-abstracta-puntos-moviles-particulas-flujo_457222-31583.jpg
     );
-    background-size:100% 120%; /* Escala la imagen para cubrir toda el área */
+    background-size:100% 150%; /* Escala la imagen para cubrir toda el área */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat;
 }
@@ -50,7 +50,7 @@ body::before{
     /* O usa display: grid; */
     flex-direction: column;
     /* Asegura que los elementos estén en columna */
-    gap: 50px;
+    /* gap: 50px; */
     /* Espacio entre <h1> e <img> */
     align-items: center;
     background: transparent;
@@ -70,10 +70,13 @@ h1 {
 color: #d3d9e0;
 }
 
+.logo11{
+
+}
+
 .logo1 {
-    width: 300px;
-    height: 200px;
-    margin-top: 10%;
+    width: 30%px;
+    height: 400px;
     background: transparent;
 }
 
@@ -155,6 +158,13 @@ padding-top: 2%;
     /* background-color: rgba(53, 144, 223, 0.819); */
     padding-top: 2%;
     padding-bottom: 2%;
+
+}
+
+.git{
+    width: 5%;
+    height: 3%;
+    padding-right: 3%;
 
 }
 
