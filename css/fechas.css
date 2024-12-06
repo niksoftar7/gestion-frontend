@@ -1,0 +1,226 @@
+/* Estilos generales */
+body {
+    background-color: #003459;
+    background-image: url(https://img.freepik.com/fotos-premium/abstracto-tecnologia-particulas-onduladas-diseno-fondo-onda-abstracta-puntos-moviles-particulas-flujo_457222-31583.jpg);
+    background-size: 100% 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+body::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Caja principal */
+.caja {
+    position: relative;
+    background: rgba(72, 60, 143, 0.6);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 10% auto auto 20%;
+    width: 60%;
+    height: 600px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+}
+
+/* Estilo de los botones y formulario */
+.botones h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e6e6e6;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.botones label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d1d1d1;
+    margin-bottom: 10px;
+    display: block;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Ocultar estilo predeterminado */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none; /* Para navegadores basados en WebKit */
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #16367E, #723D8F);
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 80%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Cambios en el hover */
+input[type="date"]:hover {
+    box-shadow: 0 6px 15px rgba(246, 109, 249, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Cambios cuando se enfoca */
+input[type="date"]:focus {
+    outline: none;
+    background: linear-gradient(90deg, #723D8F, #16367E, #F66DF9);
+    box-shadow: 0 0 10px rgba(246, 109, 249, 0.8);
+}
+
+/* Flecha personalizada (puede requerir estilos adicionales según el navegador) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    transform: rotate(-45deg);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background: #F66DF9;
+}
+
+
+/* .botones input[type="date"] {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80%;
+    transition: 0.3s;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.botones input[type="date"]:hover {
+    box-shadow: 0 0 10px rgba(72, 60, 143, 0.8);
+} */
+
+.botones input[type="submit"] {
+    background: linear-gradient(90deg, #723D8F, #16367E);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botones input[type="submit"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.astros{
+    height: 400px;
+    /* margin-top: 0.5%; */
+    margin-left: 30%;}
+
+/* Menú de navegación
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navigation ul li a:hover {
+    background: linear-gradient(90deg, #74ebd5, #9face6);
+    color: #003459;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+} */
+
+
+.navigation {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    /* margin-top: 35%; */
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation ul li {
+    position: relative;
+    margin-left: 10%;
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Animation on Hover */
+  .navigation ul li a:hover {
+    color: #b929aa;
+  }
+  
+  /* Underline Animation */
+  .navigation ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navigation ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  

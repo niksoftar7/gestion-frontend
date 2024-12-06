@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Mis Estudios - Gestor de Tiempo</title>
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+        <div class="caja">
+            <div class="contenedor1">            
+            <video src="/img/video2.mp4" class="video" autoplay controls loop></video>
+
+            </div>  
+            <div class="content">
+                <form action="">
+                    <label for="">Ingresa numero del Semestre</label>
+                    <input type="number" max="2" min="1" name="Semestre" th:field="*{Semestre}" placeholder="Numero de semestre"> 
+                    <input type="submit" >           
+                </form>
+            </div> 
+            
+
+        </div>
+</body>
+</html>
