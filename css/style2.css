@@ -8,14 +8,20 @@ body {
     background-color: #003459;
     background-image: url(	https://img.freepik.com/fotos-premium/abstracto-tecnologia-particulas-onduladas-diseno-fondo-onda-abstracta-puntos-moviles-particulas-flujo_457222-31583.jpg
     );
-    background-size:100% 120%; /* Escala la imagen para cubrir toda el área */
+    background-size:100% 150%; /* Escala la imagen para cubrir toda el área */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat;
 }
-body::before{
-    background-color: rgba(0, 0, 0, 0.5)
-}
-.caja {
+body::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}.caja {
     position: relative;
     /* Permite que el logo se posicione correctamente sobre él */
     background-color: rgba(72, 60, 143, 0.6);    
@@ -50,58 +56,53 @@ h1 {
   object-fit: cover; /* Hace que el video cubra todo el área sin distorsionarse */
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
+    z-index: -1;
 
 }
 
-
-
+.content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    left: 0.8%;
+}
 
 
 
 button {
     justify-content: center;
     align-items: center;
-    width: 10%;
-    height: 8%;
-    border-radius: 8px;
-    /* border: 0.2px solid black; */
-    padding: 1% 0 1%;
+    width: 900px; /* Ajuste para centrar y no ocupar todo el ancho */
+    height: 50px;
+    margin: 10px auto;
+    top: 50%;
+    border-radius: 12px;
+    border: 2px solid #004b70; /* Bordes en azul oscuro */
+    padding: 10px;
     color: white;
-    background-color: rgb(151, 76, 165);    
-    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.3);
-    transform: translate(-5%, 1300%);
-    background-blend-mode: color;
-    opacity: 70%;
+    font-size: 16px;
+    font-weight: bold;
+    backdrop-filter: blur(5px);
+    background-color: rgba(100, 70, 143, 0.6);    
 
+    /* background: linear-gradient(90deg, #16367E, #7C226F);    color: #ffffff; */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.1); /* Sombras estilizadas */
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    
+    /*Animación para hover */
 }
 
-button:hover  {
-    background-color: #583C80;
-    color: white;
-}
-button:active{
-    border-color: #000000;
+button:hover {
+    background: linear-gradient(145deg, #7C226F, #16367E);    color: #ffffff;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5), -6px -6px 15px rgba(255, 255, 255, 0.2); /* Más intensidad en la sombra */
 }
 
-.content {
-    font-weight: 500;
-    width: auto;
-    height: auto;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-
-    /* background-color: aliceblue; */
-    /* top: 50%; */
+button:active {
+    background-color: rgba(72, 60, 143, 0.6);    
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.6), inset -3px -3px 6px rgba(255, 255, 255, 0.1); /* Sombra interna */
 }
-
-form{
-    z-index: 100;
-}
-
-.s1{
-    margin-right: 4%;
-}
-
 
